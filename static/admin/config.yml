@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "data"
+    label: "Data"
+    files:
+      - name: resume
+        label: Resume
+        file: "src/data/resume.json"
+        fields:
+          - name: basics
+            label: Basics
+            widget: object
+            collapsed: true
+            fields:
+              - { name: name, label: Name, widget: string }
