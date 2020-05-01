@@ -1,0 +1,9 @@
+projects:
+  - name: Test Project 1
+    url: google.com
+    github: nope
+    description: Its a test project through the cms
+    tech:
+      - javascript
+      - html
+      - netlify cms
