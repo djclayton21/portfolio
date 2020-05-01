@@ -6,16 +6,104 @@ media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "data"
-    label: "Data"
+  - name: data
+    label: data
     files:
-      - name: resume
-        label: Resume
-        file: "src/data/resume.json"
+      - label: bio
+        name: bio
+        file: src/data/bio.yml
         fields:
-          - name: basics
-            label: Basics
-            widget: object
-            collapsed: true
+          - { name: name, widget: string }
+          - { name: title, widget: string }
+          - { name: summary, widget: text }
+          - { name: objective, widget: text }
+          - { name: elevator, widget: text }
+          - { name: picture, widget: image, allow_multiple: false }
+      - label: contact
+        name: contact
+        file: src/data/contact.yml
+        fields:
+          - { name: phone, widget: string }
+          - { name: email, widget: string }
+          - { name: website, widget: string }
+          - name: links
+            widget: list
             fields:
-              - { name: name, label: Name, widget: string }
+              - { name: name, widget: string }
+              - { name: url, widget: string }
+          - name: address
+            widget: object
+            fields:
+              - { name: street, widget: string }
+              - { name: city, widget: string }
+              - { name: state, widget: string }
+              - { name: zip, widget: string }
+      - label: skills
+        name: skills
+        file: src/data/skills.yml
+        fields:
+          - name: technical
+            widget: list
+            field: { name: skill, widget: string }
+          - name: soft
+            widget: list
+            field: { name: skill, widget: string }
+      - label: education
+        name: education
+        file: src/data/education
+        fields:
+          - name: education
+            widget: list
+            fields:
+              - { name: school, widget: string }
+              - { name: degree, widget: string }
+              - { name: location, widget: string }
+              - {
+                  name: completed,
+                  widget: datetime,
+                  dateFormat: true,
+                  timeFormat: false,
+                }
+      - label: work
+        name: work
+        file: src/data/work.yml
+        fields:
+          - name: work
+            widget: list
+            fields:
+              - { name: company, widget: string }
+              - { name: title, widget: string }
+              - { name: location, widget: string }
+              - { name: industry, widget: string }
+              - { name: url, widget: string }
+              - { name: current, widget: boolean }
+              - {
+                  name: start,
+                  widget: datetime,
+                  dateFormat: true,
+                  timeFormat: false,
+                }
+              - {
+                  name: end,
+                  widget: datetime,
+                  dateFormat: true,
+                  timeFormat: false,
+                }
+              - { name: description, widget: text }
+              - name: highlights
+                widget: list
+                field: { name: highlight, widget: text }
+      - label: projects
+        name: projects
+        file: src/data/projects.yml
+        fields:
+          - name: projects
+            widget: list
+            fields:
+              - { name: name, widget: string }
+              - { name: url, widget: string }
+              - { name: github, widget: string }
+              - { name: description, widget: text }
+              - name: tech
+                widget: list
+                field: { name: tech, widget: string }
