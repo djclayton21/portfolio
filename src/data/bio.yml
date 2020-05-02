@@ -3,3 +3,10 @@ title: Web Developer
 summary: New guy woo
 objective: get a job
 elevator: it goes up
+bio:
+  - name: Dan
+    title: Web Developer
+    summary: test bio 2
+    picture: /src/images/dsc07444.jpg
+    objective: test objective
+    elevator: test elevator
