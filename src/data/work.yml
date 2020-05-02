@@ -1,0 +1,25 @@
+work:
+  - start: 2017-01-01T16:42:25.411Z
+    url: https://www.parkcitypeaks.com/versante
+    location: Park City, UT
+    title: Server, Bartender
+    current: true
+    end: 2020-05-02T15:44:45.559Z
+    description: Upscale dining venue
+    company: Versante Hearth and Bar
+    industry: Food and Beverage
+    highlights:
+      - did some stuff
+      - did more stuff
+  - start: 2015-12-01T16:45:36.797Z
+    url: http://rockresorts.com/grand-summit.asp
+    location: Park City, UT
+    title: Room Service, Banquets
+    current: false
+    end: 2019-05-01T15:45:36.810Z
+    description: Fancy Hotel at PCMR
+    company: Grand Summit Hotel
+    industry: Food and Beverage
+    highlights:
+      - did stuff in room service
+      - did stuff in banquets
