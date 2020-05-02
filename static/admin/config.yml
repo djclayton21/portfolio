@@ -12,44 +12,56 @@ collections:
         name: bio
         file: src/data/bio.yml
         fields:
-          - { name: name, widget: string }
-          - { name: title, widget: string }
-          - { name: summary, widget: text }
-          - { name: objective, widget: text }
-          - { name: elevator, widget: text }
-          - { name: picture, widget: image, allow_multiple: false }
+          - name: bio
+            widget: object
+            fields:
+              - { name: name, widget: string }
+              - { name: title, widget: string }
+              - { name: summary, widget: text }
+              - { name: objective, widget: text }
+              - { name: elevator, widget: text }
+              - { name: picture, widget: image, allow_multiple: false }
       - label: contact
         name: contact
         file: src/data/contact.yml
         fields:
-          - { name: phone, widget: string }
-          - { name: email, widget: string }
-          - { name: website, widget: string }
-          - name: links
-            widget: list
-            fields:
-              - { name: name, widget: string }
-              - { name: url, widget: string }
-          - name: address
+          - name: contact
             widget: object
             fields:
-              - { name: street, widget: string }
-              - { name: city, widget: string }
-              - { name: state, widget: string }
-              - { name: zip, widget: string }
+              - { name: phone, widget: string }
+              - { name: email, widget: string }
+              - { name: website, widget: string }
+              - name: links
+                widget: list
+                fields:
+                  - { name: name, widget: string }
+                  - { name: url, widget: string }
+              - name: address
+                widget: object
+                fields:
+                  - { name: street, widget: string }
+                  - { name: city, widget: string }
+                  - { name: state, widget: string }
+                  - { name: zip, widget: string }
       - label: skills
         name: skills
         file: src/data/skills.yml
+        collapsed: true
         fields:
-          - name: technical
-            widget: list
-            field: { name: skill, widget: string }
-          - name: soft
-            widget: list
-            field: { name: skill, widget: string }
+          - name: skills
+            widget: object
+            fields:
+              - name: technical
+                widget: list
+                fields:
+                  - { name: skill, widget: string }
+              - name: soft
+                widget: list
+                fields:
+                  - { name: skill, widget: string }
       - label: education
         name: education
-        file: src/data/education
+        file: src/data/education.yml
         fields:
           - name: education
             widget: list
@@ -57,6 +69,7 @@ collections:
               - { name: school, widget: string }
               - { name: degree, widget: string }
               - { name: location, widget: string }
+              - { name: url, widget: string }
               - {
                   name: completed,
                   widget: datetime,
@@ -75,7 +88,7 @@ collections:
               - { name: location, widget: string }
               - { name: industry, widget: string }
               - { name: url, widget: string }
-              - { name: current, widget: boolean }
+              - { name: current, default: false, widget: boolean }
               - {
                   name: start,
                   widget: datetime,
@@ -91,7 +104,8 @@ collections:
               - { name: description, widget: text }
               - name: highlights
                 widget: list
-                field: { name: highlight, widget: text }
+                fields:
+                  - { name: highlight, widget: text }
       - label: projects
         name: projects
         file: src/data/projects.yml
@@ -105,4 +119,5 @@ collections:
               - { name: description, widget: text }
               - name: tech
                 widget: list
-                field: { name: tech, widget: string }
+                fields:
+                  - { name: tech, widget: string }
