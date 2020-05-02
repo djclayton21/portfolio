@@ -115,5 +115,4 @@ collections:
               - { name: description, widget: text }
               - name: tech
                 widget: list
-                fields:
-                  - { name: tech, widget: string }
+                field: { name: tech, widget: string }
