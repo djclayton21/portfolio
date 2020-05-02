@@ -1,7 +1,6 @@
-bio:
-  name: Dan Clayton
-  title: Web Developer
-  summary: lorem
-  objective: ipsum
-  elevator: should be everywehre
-  picture: /src/images/dsc07444.jpg
+name: Dan Clayton
+title: Web Developer
+summary: lorem
+objective: ipsum
+elevator: should be everywehre
+picture: /src/images/dsc07444.jpg
