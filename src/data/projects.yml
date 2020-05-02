@@ -1,9 +1,10 @@
 projects:
-  - name: Test Project 1
-    url: google.com
-    github: nope
-    description: Its a test project through the cms
+  - name: Personal Website
+    url: right here, silly
+    github: https://github.com/djclayton21/portfolio
+    description: Its my website. It does this stuff
     tech:
-      - javascript
-      - html
-      - netlify cms
+      - GatsbyJS
+      - GraphQL
+      - NetlifyCMS
+      - React
