@@ -1,0 +1,80 @@
+bio:
+  name: Dan Clayton
+  title: Web Developer
+  summary: lorem
+  objective: ipsum
+  elevator: should be everywehre
+  picture: /src/images/dsc07444.jpg
+
+contact:
+  phone: "2138148991"
+  email: clayton.daniel.j@gmail.com
+  website: danclayton.surge.sh
+  links:
+    - name: GitHub
+      url: https://github.com/djclayton21
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/djclayton21/
+    - name: Portfolio
+      url: danclayton.surge.sh
+  address:
+    street: 1841 South 500 East
+    city: Salt Lake City
+    state: Utah
+    zip: "84105"
+
+skills:
+  technical:
+    - JavaScript
+    - HTML
+    - CSS
+    - React
+  soft:
+    - Customer Service
+
+education:
+  - completed: 2012-01-01T17:02:04.233Z
+    school: University of Southern California
+    degree: BS Aerospace Engineering
+    location: Los Angeles, CA
+  - completed: 2019-11-01T16:02:49.343Z
+    school: "V School "
+    degree: Full Stack Web Development
+    location: Salt Lake City, UT
+
+work:
+  - start: 2017-01-01T16:42:25.411Z
+    url: https://www.parkcitypeaks.com/versante
+    location: Park City, UT
+    title: Server, Bartender
+    current: true
+    end: 2020-05-02T15:44:45.559Z
+    description: Upscale dining venue
+    company: Versante Hearth and Bar
+    industry: Food and Beverage
+    highlights:
+      - did some stuff
+      - did more stuff
+  - start: 2015-12-01T16:45:36.797Z
+    url: http://rockresorts.com/grand-summit.asp
+    location: Park City, UT
+    title: Room Service, Banquets
+    current: false
+    end: 2019-05-01T15:45:36.810Z
+    description: Fancy Hotel at PCMR
+    company: Grand Summit Hotel
+    industry: Food and Beverage
+    highlights:
+      - did stuff in room service
+      - did stuff in banquets
+
+projects:
+  - name: Personal Website
+    url: right here, silly
+    github: https://github.com/djclayton21/portfolio
+    description: Its my website. It does this stuff
+    tech:
+      - GatsbyJS
+      - GraphQL
+      - NetlifyCMS
+      - React
