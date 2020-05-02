@@ -13,7 +13,7 @@ collections:
         file: src/data/bio.yml
         fields:
           - name: bio
-            widget: bio
+            widget: object
             fields: 
               - { name: name, widget: string }
               - { name: title, widget: string }
