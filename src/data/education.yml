@@ -1,0 +1,9 @@
+education:
+  - completed: 2012-01-01T17:02:04.233Z
+    school: University of Southern California
+    degree: BS Aerospace Engineering
+    location: Los Angeles, CA
+  - completed: 2019-11-01T16:02:49.343Z
+    school: "V School "
+    degree: Full Stack Web Development
+    location: Salt Lake City, UT
