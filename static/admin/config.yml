@@ -46,19 +46,16 @@ collections:
       - label: skills
         name: skills
         file: src/data/skills.yml
-        collapsed: true
         fields:
           - name: skills
             widget: object
             fields:
               - name: technical
                 widget: list
-                fields:
-                  - { name: skill, widget: string }
+                field: { name: skill, widget: string }
               - name: soft
                 widget: list
-                fields:
-                  - { name: skill, widget: string }
+                field: { name: skill, widget: string }
       - label: education
         name: education
         file: src/data/education.yml
@@ -104,8 +101,7 @@ collections:
               - { name: description, widget: text }
               - name: highlights
                 widget: list
-                fields:
-                  - { name: highlight, widget: text }
+                field: { name: highlight, widget: text }
       - label: projects
         name: projects
         file: src/data/projects.yml
