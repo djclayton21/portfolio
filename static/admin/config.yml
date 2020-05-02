@@ -12,12 +12,15 @@ collections:
         name: bio
         file: src/data/bio.yml
         fields:
-          - { name: name, widget: string }
-          - { name: title, widget: string }
-          - { name: summary, widget: text }
-          - { name: objective, widget: text }
-          - { name: elevator, widget: text }
-          - { name: picture, widget: image, allow_multiple: false }
+          - name: bio
+            widget: bio
+            fields: 
+              - { name: name, widget: string }
+              - { name: title, widget: string }
+              - { name: summary, widget: text }
+              - { name: objective, widget: text }
+              - { name: elevator, widget: text }
+              - { name: picture, widget: image, allow_multiple: false }
       - label: contact
         name: contact
         file: src/data/contact.yml
